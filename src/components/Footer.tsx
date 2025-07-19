@@ -1,4 +1,5 @@
 import { Home, Mail, Phone, MapPin, Facebook, Twitter, Instagram } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
@@ -39,11 +40,11 @@ export function Footer() {
           <div>
             <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
             <ul className="space-y-2 text-primary-foreground/80">
-              <li><a href="#" className="hover:text-primary-foreground transition-colors">Find Properties</a></li>
-              <li><a href="#" className="hover:text-primary-foreground transition-colors">List Property</a></li>
-              <li><a href="#" className="hover:text-primary-foreground transition-colors">For Landlords</a></li>
-              <li><a href="#" className="hover:text-primary-foreground transition-colors">For Agents</a></li>
-              <li><a href="#" className="hover:text-primary-foreground transition-colors">About Us</a></li>
+              <li><Link to="/properties" className="hover:text-primary-foreground transition-colors">Find Properties</Link></li>
+              <li><Link to="/properties" className="hover:text-primary-foreground transition-colors">List Property</Link></li>
+              <li><Link to="/landlords" className="hover:text-primary-foreground transition-colors">For Landlords</Link></li>
+              <li><Link to="/agents" className="hover:text-primary-foreground transition-colors">For Agents</Link></li>
+              <li><Link to="/" className="hover:text-primary-foreground transition-colors">About Us</Link></li>
             </ul>
           </div>
 
