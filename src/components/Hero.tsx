@@ -47,7 +47,7 @@ export function Hero() {
 
               {/* Property Type */}
               <Select>
-                <SelectTrigger className="h-12 border-2 focus:border-primary">
+                <SelectTrigger className="h-12 border-2 focus:border-primary text-foreground">
                   <SelectValue placeholder="Property Type" />
                 </SelectTrigger>
                 <SelectContent>
@@ -61,7 +61,7 @@ export function Hero() {
 
               {/* Budget Range */}
               <Select>
-                <SelectTrigger className="h-12 border-2 focus:border-primary">
+                <SelectTrigger className="h-12 border-2 focus:border-primary text-foreground">
                   <SelectValue placeholder="Budget Range" />
                 </SelectTrigger>
                 <SelectContent>
